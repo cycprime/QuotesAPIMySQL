@@ -1,0 +1,18 @@
+version: '2'
+volumes:
+    quotesdb:
+        driver: local
+networks:
+    db_net:
+        driver: bridge
+services:
+    db:
+        image: quotesapi_mysql
+        container_name: quotesapi_mysql_container
+        env_file: ./env/runtime/default.env
+        ports:
+            - "127.0.0.1:4306:3306"
+        volumes:
+            - quotesdb:/var/lib/mysql
+        networks:
+            - db_net

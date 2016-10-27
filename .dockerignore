@@ -1,0 +1,18 @@
+# Specifies the file that should be excluded from the image build.
+
+# Don't include dockerignore and Dockerfile when creating images.
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Don't bother including the README.md file when creating images.
+README.md
+
+# Ignore the files that set up runtime environment variables.
+env/runtime/*
+
+# Any files under the notes directory.
+notes/*
+
+# Ignore the Samples directory
+Samples/*
