@@ -2,4 +2,4 @@
 scripts/*.sql
 
 # Ignore Docker runtime environment variable files
-env/runetime/*.env
+env/runtime/*.env
