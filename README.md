@@ -128,3 +128,5 @@ To stop the container:
     > docker-compose down
     
 The `docker-compose` will bring up a container by the name, `quotesapi_mysql_container`, as specified in the `docker-compose.yml` file.  The database will run in its own network called `db_net` and it exposes port 4306 on the host for database connection.  Database is stored in a named volume called `quotesdb`.  (Usually, both the container name as well as the data volume name will be prefixed by the project name.  The project name is set to the directory name if it is not specified otherwise to `docker-compose`.)
+
+If you build your own image locally, or if you pull an image from Docker Hub, you may need to adjust the db image name in the `docker-compose.yml` file accordingly.

@@ -1,5 +1,5 @@
 # Ignore database initialization scripts
-scripts/*.sql
+scripts/
 
 # Ignore Docker runtime environment variable files
-env/runtime/*.env
+env/runtime/
